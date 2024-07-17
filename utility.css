@@ -1,0 +1,61 @@
+:root {
+    --bgcolor: #302e2b;
+    --divcolor: #262522;
+    --green: #81b64c;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    background-color: #3c3b39;
+    color: azure;
+    font-size: 15px;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    width: 83%;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup {
+    width: 83%;
+    margin: auto;
+    background-color: #3c3b39;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.signup:hover {
+    filter: brightness(1.1);
+}
+
+.signup.login {
+    margin-top: 10px;
+    background-color: var(--green);
+}
+
+.language:nth-child(1) {
+    margin-bottom: 10px
+}
+
+.language > p {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.language > p:hover {
+    color: whitesmoke;
+}
+

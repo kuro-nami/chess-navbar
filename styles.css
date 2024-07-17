@@ -1,0 +1,151 @@
+/* ! Variables  */
+:root {
+    --bgcolor: #302e2b;
+    --divcolor: #262522;
+    --green: #81b64c;
+}
+
+
+/* ! Imports  */
+
+/* ! Styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100vw;
+}
+
+i#bars-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    z-index: 99999;
+    color: white;
+    display: none;
+}
+
+i#cross-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    z-index: 99999;
+    color: white;
+    display: none;
+}
+
+div#nav-div {
+    background-color: var(--divcolor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 10vw;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 50;
+}
+
+div#nav-div span:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    font-weight: 550;
+}
+
+div#nav-div span:nth-child(1) div {
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div#nav-div span:nth-child(1) div:hover {
+    background-color: rgb(26, 22, 22);
+}
+
+div#nav-div img {
+    width: 100px;
+}
+
+div#nav-div span:nth-child(2) {
+    padding: 10px;
+    color: rgb(214, 202, 202);
+}
+
+div#play-hover-links {
+    display: none;
+    z-index: 999;
+    width: 40vw;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    width: 30vw;
+    height: 100vh;
+    background-color: rgba(24, 24, 24, 0.845);
+    color: white;
+    font-family: sans-serif;
+    transition: opacity 0.3s ease;
+}
+
+
+div#play-hover-links ul {
+    list-style: none;
+    width: 100%;
+}
+
+div#play-hover-links ul div {
+    padding: 20px;
+    cursor: pointer;
+}
+
+div#play-hover-links ul div:hover {
+    background-color: black;
+}
+
+main div {
+    background-color: var(--bgcolor);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 90vw;
+}
+
+@media (0px <=width <=1300px) {
+
+    div#nav-div {
+        left: -50vw;
+        width: 50vw;
+    }
+
+    main div {
+        width: 100vw;
+    }
+
+    i#bars-icon {
+        display: flex;
+    }
+
+    div#play-hover-links {
+        left: 50vw;
+        width: 50vw;
+    }
+
+    div#nav-div span:nth-child(1) {
+        margin-top: 50px;
+    }
+
+}
